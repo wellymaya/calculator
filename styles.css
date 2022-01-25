@@ -26,9 +26,17 @@ body{
     outline: none;
     background-color: #111;
     color: #fff;
+    transition: .3s ;
+
 }
 
-.grid-container > .operator-button{
+.grid-container > button:hover{
+    background-color: #bc84f8;
+
+}
+
+
+.grid-container > .operator-button, .grid-container > .equal-button{
     background: #3d116b;
 }
 
@@ -47,14 +55,16 @@ body{
     word-wrap: break-word;
     word-break: break-all;
     color: #fff;
+
 }
 
-.output > .previous-operand {
+.output > .previous-operator {
     color: #cbc8cf;
     font-size: 1.5rem;
+
 }
 
-.output > .current-operand{
+.output > .current-operator{
     color: #cbc8cf;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
